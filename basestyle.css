@@ -28,7 +28,7 @@ body
 	font-size: 64pt;
 	position: absolute;
 	top: 16%;
-	left: 32%;
+	left: 28%;
 	
 }
 
@@ -73,7 +73,9 @@ body
 .navopt
 {
 
-	display: inline-block;
+	display: block;
+	color: #000000;
+    text-decoration: none;
 	border-left: solid 2px red;
 	border-right: solid 2px red;
 	width: 16.26%;
@@ -170,7 +172,7 @@ margin: 20px;
 	
 }
 
-#register
+#register, #login
 {
 	background-color: #ffffff;
 	margin-left: auto;
@@ -182,7 +184,7 @@ margin: 20px;
 	padding: 20px 0;
 }
 
-#register h1
+#register h1,#login h1
 {
 	position: relative;
 	left: 40%;
@@ -190,7 +192,7 @@ margin: 20px;
 	width: 200px;
 }
 
-#register form
+#register form,#login form
 {
 	margin: 35px 0;
 	border: solid 1px black;
@@ -199,4 +201,5 @@ margin: 20px;
 	left: 30%;
 	padding: 25px 0 25px 30px;
 
+	background-color: #FFAA99;
 }

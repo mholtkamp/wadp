@@ -9,6 +9,10 @@
 	<?php
 	$username = $_POST['username'];
 	$password = $_POST['password'];
+	$fname = $_POST['fname'];
+	$lname = $_POST['lname'];
+	$role = $_POST['role'];
+	$bio = $_POST['bio'];
 
 	try
 	{
@@ -25,9 +29,10 @@ Username = :cun');
 		{
 
 		$stmt = $conn->prepare('INSERT INTO 
-users(Username,Password) VALUES(:un,:pw)');
-		$stmt->execute(array('un'=> $username, 'pw'=> 
-$password));
+users(Username,Password,FirstName,LastName,Role,Bio) 
+VALUES(:un,:pw,:fn,:ln,:ro,:bi)');
+		$stmt->execute(array('un'=> $username, 'pw'=> $password, 
+'fn' => $fname, 'ln' => $lname, 'ro' => $role, 'bi' => $bio));
 	
 	}
 	
