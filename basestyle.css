@@ -340,3 +340,122 @@ margin: 20px;
 	margin: 20px 30px;
 }
 
+#presearch form
+{
+	margin: 35px 30px;
+	border: solid 1px black;
+	width: 300px;
+	position: relative;
+	left: 30%;
+	padding: 25px 0 25px 30px;
+
+	background-color: #FFAA99;
+
+}
+
+#presearch
+{
+	width: 992px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	position: relative;
+	padding: 20px 0;
+	font-family: 'Lato', sans-serif;
+
+}
+
+#presearch h1
+{
+	position: relative;
+	left: 34%;
+	font-family: 'Marko One', serif;
+	width: 400px;
+}
+
+#user-search-res
+{
+	width: 992px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	position: relative;
+	padding: 20px 0;
+	font-family: 'Lato', sans-serif;
+	height: 500px;
+
+}
+
+#user-search-res div
+{
+	background-color: #ffAA99;
+	display: block;
+	width: 250px;
+	height: 100px;
+	margin: 20px 0px 20px 52px;
+	float: left;
+	position: relative;
+	border: solid 2px black;
+}
+
+#user-search-res div img
+{
+	border: solid 1px black;
+	position: absolute;
+	top: 17px;
+	left: 15px;
+}
+
+#user-search-res div a
+{
+	color: black;
+	font-size: 16pt;
+	position: absolute;
+	top: 40%;
+	left: 94px;
+}
+
+#message-disp
+{
+	width: 992px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffff;
+	position: relative;
+	padding: 20px 0;
+	font-family: 'Lato', sans-serif;
+	height: 500px;
+}
+
+#message-list
+{
+	position: absolute;
+	top: 30px;
+	left: 85px;
+	width: 200px;
+	min-height: 500px;
+	border: solid 2px black;
+}
+
+#message-body
+{
+	position: absolute;
+	top: 30px;
+	right: 85px;
+	width: 500px;
+	height: 350px;
+	border: solid 2px black;
+}
+
+#message-action
+{
+	position: absolute;
+	top: 410px;
+	right: 85px;
+	width: 500px;
+	height: 100px;
+	border: solid 2px black;
+}

@@ -64,9 +64,14 @@
 			echo '<a class="navopt"><span>Profile</span></a>';
 	
 		echo'
-		<a class="navopt"><span>Search</span></a>
-		<a class="navopt"><span>Messages</span></a>
-		<a class="navopt"><span>About</span></a>';
+		<a class="navopt" href="presearch.php"><span>Search</span></a>';
+		
+		if(array_key_exists('user',$_SESSION))
+			echo '<a class="navopt" href="./message.php"><span>Messages</span></a>';
+		else
+			echo '<a class="navopt"><span>Messages</span></a>';
+
+		echo '<a class="navopt"><span>About</span></a>';
 		
 		if(!array_key_exists('user',$_SESSION))
 			echo '<a class="navopt" href="./prelogin.php"><span>Login</span></a>';
