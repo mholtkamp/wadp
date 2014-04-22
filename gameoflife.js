@@ -7,7 +7,7 @@
 	var cellWidth = 16;
 	var cellHeight = 16;
 	var spawnLimit = 0.2;
-	var cellColor = "#FFDDDD";
+	var cellColor = "#FFCCBB";
 	var updateInterval = 1000;
 	
 	init();

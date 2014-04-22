@@ -87,7 +87,6 @@ body
 	-webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
     transition: background-color 0.5s, transform 0.5s;
 
-
 }
 
 .navopt span
@@ -97,8 +96,11 @@ body
 	font-size: 16pt;
 	text-align: center;
 	font-family: 'Marko One', serif;
+}
 
-
+.current-page
+{
+	background-color: #ff0000;
 }
 
 .navopt:hover

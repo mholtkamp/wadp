@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Login</title>
-</head>
-<body>
-
 <?php
+	session_start();
+	require("util.php");
+	check_logged();
+	add_header();
+
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 
@@ -18,7 +16,9 @@ Username = :cun AND Password = :cpw');
 		$cstmt->execute(array('cun' => $username, 'cpw' => $password));
 
 		$res = $cstmt->fetch();
-		print_r($res);
+		$_SESSION['user'] = $res['Username'];
+		
+		header( 'Location: index.php' );
 
 		if($res == null)
 		{
@@ -32,8 +32,7 @@ Username = :cun AND Password = :cpw');
 	}
 
 
+	add_footer();
 
-?>
 
-</body>
-</html>
+
