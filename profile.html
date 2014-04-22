@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Profile</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="basestyle.css">
+<link href='http://fonts.googleapis.com/css?family=Lemon' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Marko+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+<div id="main">
+
+	<div id="banner">
+		<canvas id="cgol" width="992" height="192"></canvas>
+		<div id="title"><span id="title1">GD</span>  <span id="title2">Sync</span></div>
+		<div class="search"></div>
+		<div class="mail"></div>
+	</div>
+	
+	<div id="navbar">
+		<a class="navopt" href="./index.html"><span>Home</span></a>
+		<a class="navopt"><span>Profile</span></a>
+		<a class="navopt"><span>Feed</span></a>
+		<a class="navopt"><span>Messages</span></a>
+		<a class="navopt"><span>About</span></a>
+		<a class="navopt" href="./login.html"><span>Login</span></a>
+	</div>
+	
+	<div id="profile">
+	
+		<div id="profavatar">
+			
+		</div>
+		
+		<div id="profidentity" onmouseover="setStrobe(this)" onmouseout="resetStrobe(); strobeElement = null;">
+				<br><br>
+				<span class="profname">Profile Name</span><br>
+				<span class="profrole">Primary Role</span>
+		</div>
+		
+		<div id="profprojects">
+			<div id="active-projects" class="proj-expanded">
+				<h1> Active Projects </h1> <div class="exp" onclick="toggleHeight(this);"><pre> - </pre></div>
+				<a> Game 1</a>
+				<a> Game 2</a>
+				<a> Game 3</a>
+			</div>
+			<div id="finished-projects" class="proj-expanded"> 
+				<h1> Finished Projects </h1> <div class="exp" onclick="toggleHeight(this);"><pre> - </pre></div>
+				<a> Game 4 </a>
+				<a> Game 5 </a>
+			</div>
+		</div>
+		
+		
+		
+		<div id="profbio">
+			<h1>Bio</h1>
+			<div> Bio text here </div>
+		</div>
+	</div>
+</div>
+
+<script>
+	var ap = document.getElementById("active-projects");
+	ap.style.height = document.defaultView.getComputedStyle(ap).getPropertyValue("height");
+	ap.style.maxHeight = ap.style.height;
+	
+	ap = document.getElementById("finished-projects");
+	ap.style.height = document.defaultView.getComputedStyle(ap).getPropertyValue("height");
+	ap.style.maxHeight = ap.style.height;
+	
+	
+</script>
+<script src="gameoflife.js"></script>
+<script src="util.js"></script>
+<script src="strobe.js"></script>
+</body>
+</html>

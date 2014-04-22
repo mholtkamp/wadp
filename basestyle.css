@@ -203,3 +203,138 @@ margin: 20px;
 
 	background-color: #FFAA99;
 }
+
+#regresult
+{
+	background-color: #ffffff;
+	width: 992px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#profile
+{
+	background-color: #ffffff;
+	width: 992px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: 860px;
+	position: relative;
+	font-family: 'Lato', sans-serif;
+}
+
+#profavatar
+{
+	background-color: #000000;
+	width: 256px;
+	height: 256px;
+	position: absolute;
+	left: 42px;
+	top: 42px;
+	border: solid 2px red;
+}
+
+#profidentity
+{
+	background-color: #FFFFFF;
+	width: 300px;
+	height: 130px;
+	position: absolute;
+	right: 200px;
+	top: 100px;
+	border: solid 1px red;
+
+	text-align: center;
+	background-color: #FFAA99;
+}
+
+#profprojects
+{
+	background-color: #FFAA99;
+	width: 256px;
+	min-height: 0px;
+	position: absolute;
+	left: 42px;
+	top: 340px;
+
+}
+
+#profbio
+{
+	background-color: #FFAA99;
+	width: 608px;
+	min-height: 500px;
+	position: absolute;
+	right: 42px;
+	top: 340px;
+	
+
+}
+
+#profidentity .profname
+{
+	font-family: 'Lemon', cursive;
+	font-size: 18pt;
+	pointer-events: none;
+}
+
+#profidentity .profrole
+{
+	font-family: 'Marko One', sans-serif;
+	pointer-events: none;
+}
+
+
+#profprojects h1
+{
+	background-color: #ff2211;
+	padding-left: 10px;
+	font-family: 'Lemon', cursive;
+	font-size: 14pt;
+	position: relative;
+}
+
+.exp
+{
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+	background-color: #ffffff;
+	color: #000000;
+	position: absolute;
+	top: 3px;
+	right: 4px;
+	cursor: pointer;
+
+}
+
+#profprojects a
+{
+	display: block;
+
+}
+
+#active-projects, #finished-projects
+{
+	position: relative;
+	overflow: hidden;
+	max-height: auto;
+	-webkit-transition: height 0.5s, -webkit-transform 0.5s;
+    transition: height 0.5s, transform 0.5s;
+
+}
+
+#profbio h1
+{
+	background-color: #ff2211;
+	padding-left: 10px;
+	font-family: 'Lemon', cursive;
+	font-size: 14pt;
+	position: relative;
+}
+
+#profbio div
+{
+	margin: 20px 30px;
+}
+
