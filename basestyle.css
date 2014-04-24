@@ -78,7 +78,7 @@ body
     text-decoration: none;
 	border-left: solid 2px red;
 	border-right: solid 2px red;
-	width: 16.26%;
+	width: 161px;
 	height: 100%;
 	text-align: center;
 	position: relative;
@@ -86,6 +86,12 @@ body
 	background-color: #FFAA99;
 	-webkit-transition: background-color 0.5s, -webkit-transform 0.5s;
     transition: background-color 0.5s, transform 0.5s;
+
+}
+
+#finalopt
+{
+	width: 163px;
 
 }
 
@@ -449,6 +455,8 @@ margin: 20px;
 	width: 500px;
 	height: 350px;
 	border: solid 2px black;
+	padding: 20px;
+	box-sizing: border-box;
 }
 
 #message-compose
@@ -473,6 +481,7 @@ margin: 20px;
 	border: solid 1px red;
 	background-image: url("delete.png");
 	background-size: 100px 100px;
+	display: block;
 
 }
 
@@ -488,11 +497,11 @@ margin: 20px;
 	color:black;
 	background-color: #ffAA99;
 	padding: 10px 20px;
-}
+	-webkit-transition: background-color 0.5s, color 0.5s, -webkit-transform 0.5s;
+    transition: background-color 0.5s, color 0.5s, transform 0.5s;
+	cursor:  pointer;
 
-.selected-message-head
-{
-	background-color: #ff2211;
-	color: #ffffff;
 	
 }
+
+

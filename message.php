@@ -9,7 +9,7 @@
 
 <div id="message-disp">
 	<div id="message-list">
-		<script>var bodies = []; var selected = -1;</script>
+		<script>var bodies = []; var selected = -1; var msgIds = [];</script>
 		<?php
 try
 		{
@@ -25,13 +25,13 @@ try
 			$i=0;
 			while($res != null)
 			{
-
-				echo '<div class="message-head" onclick="selected = ' . $i . '; updateBody();">';
+				echo '<div class="message-head" onclick="selected = ' . $i . '; updateBody(this);">';
 				echo 'From: ' . $res['Sender'] . '<br>';
-				echo 'Subject: ' . $res['Subject'] . '<br>' . $i . '<br>';
+				echo 'Subject: ' . $res['Subject'] . '<br>';
 				echo '</div>';
 				
 				echo '<script> bodies.push("' . $res['Message'] . '");</script>';
+				echo '<script> msgIds.push("' . $res['MessageID'] . '");</script>';
 				
 				$i++;
 				$res = $stmt->fetch();
@@ -54,13 +54,14 @@ try
 	
 	</div>
 	
-	<div id="message-delete"onmouseover="setStrobe(this);" onmouseout="resetStrobe(); strobeElement = null;">
+	<div id="message-delete"onmouseover="setStrobe(this);" onmouseout="resetStrobe(); strobeElement = null;" onclick="deleteMessage()";>
 	
 	</div>
 </div>
 
 
 <script src="./mail.js"></script>
+<script> updateBody(); </script>
 <?php 
 	add_footer();
 ?>

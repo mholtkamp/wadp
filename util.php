@@ -74,9 +74,9 @@
 		echo '<a class="navopt"><span>About</span></a>';
 		
 		if(!array_key_exists('user',$_SESSION))
-			echo '<a class="navopt" href="./prelogin.php"><span>Login</span></a>';
+			echo '<a id="finalopt" class="navopt" href="./prelogin.php"><span>Login</span></a>';
 		else
-			echo '<a class="navopt" href="./logout.php"><span>Logout</span></a>';
+			echo '<a id="finalopt" class="navopt" href="./logout.php"><span>Logout</span></a>';
 			
 		echo '
 	</div>';
